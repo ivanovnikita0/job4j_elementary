@@ -57,35 +57,35 @@ public class Converter {
         boolean passed = expected == out;
         System.out.println("140 rubles are 2 euro. Test result :" + passed);
 
-        float in1 = 180;
-        float expected1 = 3;
-        float out1 = Converter.rubleToDollar(in1);
-        boolean passed1 = expected1 == out1;
-        System.out.println("180 rubles are 3 dollars. Test result :" + passed1);
+        in = 180;
+        expected = 3;
+        out = Converter.rubleToDollar(in);
+        passed = expected == out;
+        System.out.println("180 rubles are 3 dollars. Test result :" + passed);
 
-        float in2 = 100;
-        float expected2 = 116;
-        float out2 = Converter.euroToDollar(in2);
-        boolean passed2 = expected2 == out2;
-        System.out.println("100 euro are 116 dollars. Test result :" + passed2);
+        in = 100;
+        expected = 116;
+        out = Converter.euroToDollar(in);
+        passed = expected == out;
+        System.out.println("100 euro are 116 dollars. Test result :" + passed);
 
-        float in3 = 100;
-        float expected3 = 7000;
-        float out3 = Converter.euroToRuble(in3);
-        boolean passed3 = expected3 == out3;
-        System.out.println("100 euro are 7000 rubles. Test result :" + passed3);
+        in = 100;
+        expected = 7000;
+        out = Converter.euroToRuble(in);
+        passed = expected == out;
+        System.out.println("100 euro are 7000 rubles. Test result :" + passed);
 
-        float in4 = 232;
-        float expected4 = 200;
-        float out4 = Converter.dollarToEuro(in4);
-        boolean passed4 = expected4 == out4;
-        System.out.println("232 dollars are 200 euro. Test result :" + passed4);
+        in = 232;
+        expected = 200;
+        out = Converter.dollarToEuro(in);
+        passed = expected == out;
+        System.out.println("232 dollars are 200 euro. Test result :" + passed);
 
-        float in5 = 150;
-        float expected5 = 9000;
-        float out5 = Converter.dollarToRuble(in5);
-        boolean passed5 = expected5 == out5;
-        System.out.println("150 dollars are 9000 rubles. Test result :" + passed5);
+        in = 150;
+        expected = 9000;
+        out = Converter.dollarToRuble(in);
+        passed = expected == out;
+        System.out.println("150 dollars are 9000 rubles. Test result :" + passed);
 
     }
 
