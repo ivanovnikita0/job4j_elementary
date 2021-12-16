@@ -87,4 +87,17 @@ public class MatrixCheckTest {
         char[] expected = {'X', 'Y', 'Z'};
         Assert.assertArrayEquals(expected, result);
     }
+
+    @Test
+    public void whenDiagonalFullY() {
+        char[][] input = {
+                {'Y', ' ', ' ', ' '},
+                {' ', 'Y', ' ', ' '},
+                {' ', ' ', 'Y', ' '},
+                {' ', ' ', ' ', 'Y'}
+        };
+        char[] result = MatrixCheck.extractDiagonal(input);
+        char[] expected = {'Y', 'Y', 'Y', 'Y'};
+        Assert.assertArrayEquals(expected, result);
+    }
 }
